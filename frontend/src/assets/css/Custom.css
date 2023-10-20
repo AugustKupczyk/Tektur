@@ -1,0 +1,12 @@
+/* Remove the --bs-gutter-x property from Bootstrap containers */
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.row,
+.container-xxl {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0; /* You may also set --bs-gutter-y to 0 if desired */
+}
