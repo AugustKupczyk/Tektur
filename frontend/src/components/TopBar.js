@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logoTektur from "../assets/images/logoTektur.jpeg";
 
 function TopBar() {
@@ -27,7 +28,9 @@ function TopBar() {
         >
           {/* Company name and image */}
           <div className="company-info">
-            <img src={logoTektur} alt="Company Logo" className="company-logo" />
+            <Link to="/">
+              <img src={logoTektur} alt="Company Logo" className="company-logo" />
+            </Link>
             <span className="company-name">Téktur</span>
           </div>
           <ul className="navbar-nav ml-auto">
