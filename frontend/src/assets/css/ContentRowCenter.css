@@ -1,4 +1,4 @@
-.welcome-container{
+.welcome-container {
     margin-bottom: 20px;
 }
 
@@ -21,3 +21,32 @@
 #innovacion {
     font-family: 'Lato', sans-serif;
 }
+
+.button {
+    width: 170px;
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  /* Create a shining overlay using ::before */
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.8) 100%);
+    transition: transform 0.5s; /* Add smooth transition for the transform property */
+  }
+  
+  /* Move the shining overlay on hover */
+  .button:hover::before {
+    transform: translateX(200%); /* Move the shining overlay to the right */
+  }

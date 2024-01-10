@@ -18,7 +18,7 @@ function ContentRowCenter() {
                     <h1 id="innovacion"> INNOVACION EN INGENIERIA DE OBRA </h1>
                     {/* Button to navigate to the projects page */}
                     <Link to="/proyectos">
-                        <button>View more projects</button>
+                        <button className="button">Ver Proyectos</button>
                     </Link>
                 </div>
             </section>

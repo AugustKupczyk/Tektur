@@ -3,7 +3,7 @@ import Box from './Box'; // Import the Box component
 
 function NuestrosPilares() {
     return (
-        <div className="container" >
+        <div id="nuestros-pilares" className="container" >
             <h2 style={{ textAlign: "center", marginBottom: "20px" }}>NUESTROS PILARES</h2>
             <div className="d-flex justify-content-between flex-wrap">
                 <div className="col-md-3 mb-4">

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Nosotros() {
     return (
-        <div className="container" style={{marginTop:"50px",marginBottom:"50px"}}>
+        <div id="nosotros" className="container" style={{marginTop:"50px",marginBottom:"50px"}}>
             <div className="row">
                 <div className="col-md-6 offset-md-3 text-center">
                     <h2>NOSOTROS</h2>

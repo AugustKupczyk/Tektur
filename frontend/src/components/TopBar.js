@@ -9,7 +9,17 @@ function TopBar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const menuItems = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
+  const menuItems = ['Nosotros', 'Nuestros Pilares', 'Item 3', 'Item 4'];
+
+  const handleNavLinkClick = (item) => {
+    // Scroll to the corresponding section within the same page
+    const targetSection = document.getElementById(item.toLowerCase().replace(/\s+/g, '-'));
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    // Close the menu
+    setIsMenuOpen(false);
+  };
 
   return (
     <React.Fragment>
@@ -36,9 +46,12 @@ function TopBar() {
           <ul className="navbar-nav ml-auto">
             {menuItems.map((item, index) => (
               <li className="nav-item" key={index}>
-                <a className="nav-link" href="/">
+                <span
+                  className={`nav-link ${window.location.hash === `#${item.toLowerCase().replace(/\s+/g, '-')}` ? 'active' : ''}`}
+                  onClick={() => handleNavLinkClick(item)}
+                >
                   {item}
-                </a>
+                </span>
               </li>
             ))}
           </ul>

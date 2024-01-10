@@ -1,3 +1,7 @@
+.nav-item{
+    cursor: pointer;
+}
+
 .company-info {
     display: flex;
     align-items: center;
